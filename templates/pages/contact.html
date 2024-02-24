@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block contact %}
+
+<!-- PRELOADER -->
+<div class="page-loader">
+	<div class="loader">Loading...</div>
+</div>
+<!-- /PRELOADER -->  
+<div class="boxed_wrapper">
+<!--Start breadcrumb area-->     
+<div class="breadcrumb-area" style="background-image: url({% static "images/background/3.jpg" %});">
+    <div class="container text-center">
+        <h1>Contact Us</h1>
+            <div class="breadcrumbs_path">
+                <a href="#">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp; Contact
+            </div>      
+    </div>
+</div>
+<!--End breadcrumb area-->
+ 
+
+
+
+<!--Start contact form area-->
+<div class="contact-form-area sec-padd-top">
+    <div class="container">
+        
+        
+        <div class="row">
+           
+            <div class="col-md-8">
+        
+                <div class="contact-form">
+                    <form id="contact-page-form" name="contact_form" class="default-form" action="mail.php" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" value="" placeholder="Your Name*" required="">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" name="email" value="" placeholder="Your Mail*" required="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" name="phone" value="" placeholder="Phone">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="Subject" value="" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <textarea name="message" placeholder="Your Message.." required=""></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+								<input class="thm-btn bg-clr1" type="submit" value="Send Message">
+                            </div>
+                        </div>
+                    </form>  
+					<p class="form-messege"></p>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="footer-contact-info">
+                    <div class="title">
+                        <h4>Quick Contact</h4>
+                        <p>If you are passionate about helping people: through education, or preventing then you </p>
+                    </div>
+                    <ul class="clearfix">
+                        <li>
+                            <div class="iocn-holder">
+                                <span class="fa fa-home"></span>
+                            </div>
+                            <div class="text-holder">
+
+                                <h6>321, Breaking Street</h6>
+                                <p>Newyork ,USA 10002</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iocn-holder">
+                                <span class="icon-technology-1"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h6>Call Us On</h6>
+                                <p>1-8000-978-6543</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iocn-holder">
+                                <span class="icon-letter-1"></span>
+                            </div>
+                            <div class="text-holder">
+                                <h6>Mail Us @</h6>
+                                <a href="#"><p>Supportuss@gmail.com</p></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+                
+        </div>
+    </div>
+</div>
+<!--End contact form area-->
+
+
+
+<div class="home-google-map">
+    <div 
+        class="google-map" 
+        id="contact-google-map" 
+        data-map-lat="51.507192" 
+        data-map-lng="-0.127265" 
+        data-icon-path="{% static "images/icon/marker.png" %}"
+        data-map-title="Services"
+        data-map-zoom="10" >
+
+    </div>
+
+</div>
+
+<div class="call-out2">
+    <div class="container">
+        <div class="clearfix">
+            <div class="float_left">
+                <h4>Have any question or need any business consultation?</h4>
+            </div>
+            <div class="float_right">
+                <a href="{% url "contact" %}" class="thm-btn bg-clr2">Request Quote</a>
+            </div>
+        </div>
+                
+    </div>
+</div>
+
+
+<div class="brand-logo sec-padd">
+    <div class="container">
+        <ul class="brand-carousel">
+            <li><a href="#"><img src="{% static "images/brand/1.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/2.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/3.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/4.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/5.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/6.png" %}" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock contact %}

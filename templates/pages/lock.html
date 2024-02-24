@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block lock %}
+
+<!-- PRELOADER -->
+<div class="page-loader">
+	<div class="loader">Loading...</div>
+</div>
+<!-- /PRELOADER -->  
+<div class="boxed_wrapper">
+<!--Start mainmenu area-->
+
+<!--End mainmenu area-->       
+ 
+<div class="not-found-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="not-found-content text-center">
+                    <h1>404</h1>
+                    <h3>OOPPS! THE PAGE YOU WERE LOOKING FOR, COULDN'T BE FOUND.</h3>
+                    <p>Try the search below to find matching pages:</p>
+                    <form class="search-form" action="#">
+                        <input placeholder="Search..." type="text">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="call-out2">
+    <div class="container">
+        <div class="clearfix">
+            <div class="float_left">
+                <h4>Have any question or need any business consultation?</h4>
+            </div>
+            <div class="float_right">
+                <a href="contact.html" class="thm-btn bg-clr2">Request Quote</a>
+            </div>
+        </div>
+                
+    </div>
+</div>
+
+<div class="brand-logo sec-padd">
+    <div class="container">
+        <ul class="brand-carousel">
+            <li><a href="#"><img src="{% static "images/brand/1.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/2.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/3.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/4.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/5.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/6.png" %}" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock lock %}

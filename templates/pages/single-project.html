@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block singleproject %}
+
+<!-- PRELOADER -->
+<div class="page-loader">
+	<div class="loader">Loading...</div>
+</div>
+<!-- /PRELOADER -->  
+<div class="boxed_wrapper">
+<!--Start breadcrumb area-->     
+<div class="breadcrumb-area" style="background-image: url({% static "images/background/3.jpg" %});">
+    <div class="container text-center">
+        <h1>Single Project</h1>
+            <div class="breadcrumbs_path">
+                <a href="#">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp; Single Project
+            </div>      
+    </div>
+</div>
+<!--End breadcrumb area-->
+
+
+<div class="project-single sec-padd">
+    <div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="img-boxsd">
+						<img src="{% static "images/project/10.jpg" %}" alt="">
+					</div>
+				</div>
+
+				<div class="col-md-6 col-sm-12">
+					<div class="single-project-info">
+						<h4>PROJECT INFO</h4>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</p>
+						 <ul class="list-item">
+							<li>Disk are dstroy in 3 hours </li>
+							<li>Broken computer hard drive</li>
+							<li>lass time of save time</li>
+							<li>Good product best </li>
+							<li>Kight glass conjant</li>
+							<li>Qunan tiraden of big</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-12">
+					<div class="single-project-info">
+						<h4>WHAT WE DID</h4>
+						<p>Eorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat magna aliquam erat volutpat.</p>
+						<div class="single-project-s-image pdr-15px">
+							 <img src="{% static "images/project/ssp1.jpg" %}" alt=""> 
+						</div>
+						<div class="single-project-s-image pdl-15px">
+							 <img src="{% static "images/project/ssp2.jpg" %}" alt=""> 
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div class="call-out2">
+    <div class="container">
+        <div class="clearfix">
+            <div class="float_left">
+                <h4>Have any question or need any business consultation?</h4>
+            </div>
+            <div class="float_right">
+                <a href="contact.html" class="thm-btn bg-clr2">Request Quote</a>
+            </div>
+        </div>
+                
+    </div>
+</div>
+
+<div class="brand-logo sec-padd">
+    <div class="container">
+        <ul class="brand-carousel">
+            <li><a href="#"><img src="{% static "images/brand/1.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/2.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/3.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/4.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/5.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/6.png" %}" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock singleproject %}

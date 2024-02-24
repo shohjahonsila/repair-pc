@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block price %}
+<!-- PRELOADER -->
+<div class="page-loader">
+	<div class="loader">Loading...</div>
+</div>
+<!-- /PRELOADER -->  
+<div class="boxed_wrapper">
+<!--Start breadcrumb area-->     
+<div class="breadcrumb-area" style="background-image: url({% static "images/background/3.jpg" %});">
+    <div class="container text-center">
+        <h1>Our Best Price</h1>
+            <div class="breadcrumbs_path">
+                <a href="#">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp; Price
+            </div>      
+    </div>
+</div>
+<!--End breadcrumb area-->
+ 
+<!--Start faq content area-->
+<div class="price-content-area">
+    <div class="container">
+        <div class="row">
+                <div class="col-md-4 col-sm-6"> 
+                   <div class="wrap-price-yellow" data-animation="fadeInUp" data-time="300">
+                   <i class="fa fa-cube"></i>
+                   <div class="price-yellow">$99</div>
+                   <div class="level-class">BASIC</div>
+                   <span class="list">Unlimited Entrance</span>
+                   <span class="list">Documentation</span>
+                   <span class="list">Full Support</span>
+                   <span class="list">Full Features</span>
+                   <span class="list">Video Tuts</span>
+                   
+                    <div class="btn-content">
+                      <a class="link-class" href="#">GET IT NOW</a>
+                    </div>
+                  
+                   </div>
+              </div>
+                <div class="col-md-4 col-sm-6"> 
+                   <div class="wrap-price-yellow" data-animation="fadeInUp" data-time="300">
+                   <i class="fa fa-gift" aria-hidden="true"></i>
+                   <div class="price-yellow">$199</div>
+                   <div class="level-class">BUSINESS</div>
+                   <span class="list">Unlimited Entrance</span>
+                   <span class="list">Documentation</span>
+                   <span class="list">Full Support</span>
+                   <span class="list">Full Features</span>
+                   <span class="list">Video Tuts</span>
+                   
+                    <div class="btn-content">
+                      <a class="link-class" href="#">GET IT NOW</a>
+                    </div>
+                  
+                   </div>
+              </div>
+                <div class="col-md-4 col-sm-6 hidden-sm"> 
+                   <div class="wrap-price-yellow" data-animation="fadeInUp" data-time="300">
+                   <i class="fa fa-diamond" aria-hidden="true"></i>
+                   <div class="price-yellow">$299</div>
+                   <div class="level-class">PREMIUM</div>
+                   <span class="list">Unlimited Entrance</span>
+                   <span class="list">Documentation</span>
+                   <span class="list">Full Support</span>
+                   <span class="list">Full Features</span>
+                   <span class="list">Video Tuts</span>
+                   
+                    <div class="btn-content">
+                      <a class="link-class" href="#">GET IT NOW</a>
+                    </div>
+                  
+                   </div>
+              </div>
+        </div>
+    </div>
+</div> 
+<!--End faq content area-->      
+
+<div class="call-out2">
+    <div class="container">
+        <div class="clearfix">
+            <div class="float_left">
+                <h4>Have any question or need any business consultation?</h4>
+            </div>
+            <div class="float_right">
+                <a href="contact.html" class="thm-btn bg-clr2">Request Quote</a>
+            </div>
+        </div>
+                
+    </div>
+</div>
+
+
+<div class="brand-logo sec-padd">
+    <div class="container">
+        <ul class="brand-carousel">
+            <li><a href="#"><img src="{% static "images/brand/1.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/2.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/3.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/4.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/5.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/6.png" %}" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock price %}

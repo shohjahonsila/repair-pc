@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block project %}
+
+<!-- PRELOADER -->
+<div class="page-loader">
+	<div class="loader">Loading...</div>
+</div>
+<!-- /PRELOADER -->  
+<div class="boxed_wrapper">
+
+<!--Start breadcrumb area-->     
+<div class="breadcrumb-area" style="background-image: url({% static "images/background/3.jpg" %});">
+    <div class="container text-center">
+        <h1>Projects</h1>
+            <div class="breadcrumbs_path">
+                <a href="#">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp; Projects
+            </div>      
+    </div>
+</div>
+<!--End breadcrumb area-->
+
+
+
+<div class="project-content sec-padd">
+    <div class="container">
+        <ul class="gallery-filter post-filter">
+            <li class="filter active" data-filter=".filter-item"><span>All</span></li>
+            <li class="filter" data-filter=".computer"><span>Computer</span></li>
+            <li class="filter" data-filter=".laptop"><span>Laptop</span></li>
+            <li class="filter" data-filter=".phone"><span>Phone</span></li>
+            <li class="filter" data-filter=".ipad"><span>Ipad</span></li>
+            <li class="filter" data-filter=".watch"><span>Watch</span></li>
+        </ul>
+
+        <div class="row masonary-layout filter-layout">
+            <div class="col-md-4 mix col-sm-6 computer filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/1.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 01</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/1.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 phone filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/3.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 02</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/3.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 ipad filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/2.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 03</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/2.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 computer filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/4.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 04</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/4.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 computer filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/5.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 05</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/5.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 watch filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/6.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 06</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/6.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 phone filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/7.jpg"%}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 06</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/7.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 ipad filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/8.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 08</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/8.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mix col-sm-6 laptop filter-item">
+                <div class="single-project-item">
+                    <div class="img-box">
+                        <img src="{% static "images/project/9.jpg" %}" alt="Awesome Image"/>
+                        <div class="overlay">
+                            <div class="box">
+                                <div class="top-box">
+                                    <div class="title">
+                                        <a href="single-project.html"><h3>Our Project 09</h3></a>
+                                    </div>
+                                </div>
+                                <div class="bottom-box">
+                                    <ul>
+                                        <li><a data-group="1" href="{% static "images/project/9.jpg" %}" class="img-popup"><i class="fa fa-picture-o"></i></a></li>
+                                        <li><a href="single-project.html"><i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="call-out2">
+    <div class="container">
+        <div class="clearfix">
+            <div class="float_left">
+                <h4>Have any question or need any business consultation?</h4>
+            </div>
+            <div class="float_right">
+                <a href="contact.html" class="thm-btn bg-clr2">Request Quote</a>
+            </div>
+        </div>
+                
+    </div>
+</div>
+
+<div class="brand-logo sec-padd">
+    <div class="container">
+        <ul class="brand-carousel">
+            <li><a href="#"><img src="{% static "images/brand/1.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/2.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/3.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/4.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/5.png" %}" alt=""></a></li>
+            <li><a href="#"><img src="{% static "images/brand/6.png" %}" alt=""></a></li>
+        </ul>
+    </div>
+</div>
+
+
+{% endblock project %}
